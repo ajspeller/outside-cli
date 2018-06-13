@@ -1,11 +1,30 @@
 {
   "name": "outside-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI app that gives you the weather forecast",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "engines": {
+    "node": ">=8"
   },
+  "keywords": [
+    "weather", "forecast", "rain"
+  ],
+  "preferGlobal": true,
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "outside": "bin/outside"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "minimist": "^1.2.0",
+    "ora": "^2.1.0",
+    "tslint": "^5.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
 }
